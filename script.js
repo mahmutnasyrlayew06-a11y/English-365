@@ -251,3 +251,11 @@
     }
 
 })();
+// Service Worker registration
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+        navigator.serviceWorker.register('service-worker.js')
+            .then(reg => console.log('SW registratsiya qilindi!'))
+            .catch(err => console.log('SW xatosi:', err));
+    });
+}
