@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>365 English Learning</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <div id="app">
+        <!-- Header -->
+        <header>
+            <div class="container">
+                <h1>📚 365 English</h1>
+                <div class="day-info">
+                    <span id="currentDay">1-kun</span>
+                    <span id="levelBadge" class="badge">A1</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Asosiy kontent -->
+        <main>
+            <div class="container">
+                <!-- Progress -->
+                <div class="progress-section">
+                    <div class="progress-bar">
+                        <div id="progressFill" style="width: 0%"></div>
+                    </div>
+                    <p id="progressText">0% tugallandi</p>
+                </div>
+
+                <!-- Bugungi dars -->
+                <section class="lesson-card">
+                    <h2>📖 Bugungi dars</h2>
+                    <div id="lessonContent">
+                        <div class="word-section">
+                            <h3>🆕 Yangi so'zlar</h3>
+                            <ul id="wordList"></ul>
+                        </div>
+                        <div class="sentence-section">
+                            <h3>✍️ Misol jumlalar</h3>
+                            <ul id="sentenceList"></ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Grammatika -->
+                <section class="grammar-card">
+                    <h3>📝 Grammatika</h3>
+                    <div id="grammarContent"></div>
+                </section>
+
+                <!-- Tugmalar -->
+                <div class="actions">
+                    <button id="prevDayBtn" class="btn">⬅️ Oldingi</button>
+                    <button id="nextDayBtn" class="btn">Bugungi ➡️</button>
+                    <button id="resetBtn" class="btn btn-danger">🔄 Qayta boshlash</button>
+                </div>
+
+                <!-- Statistikalar -->
+                <div class="stats">
+                    <div class="stat-item">
+                        <span class="stat-number" id="totalWords">0</span>
+                        <span class="stat-label">So'z</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" id="totalSentences">0</span>
+                        <span class="stat-label">Jumla</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" id="daysCompleted">0</span>
+                        <span class="stat-label">Kun</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <p>© 2026 365 English Learning | Redmi 15 uchun moslashtirilgan</p>
+        </footer>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
